@@ -11,9 +11,9 @@ def run_basic_chat():
     messages = [{"role": "system", "content": "You are a helpful assistant."}]
 
     while True:
-        user_input = input("\n🧑 You: ")
+        user_input = input("\n You: ")
         if user_input.lower() in ["exit", "quit"]:
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
 
         messages.append({"role": "user", "content": user_input})
