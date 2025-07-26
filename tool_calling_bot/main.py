@@ -7,7 +7,7 @@ from tools import calculator_tool, get_current_time, web_search
 client = OpenAI(api_key= OPENAI_API_KEY)
 
 def run_basic_chat():
-    print("🤖 Bot: Hello! I'm your assistant. Ask me anything (type 'exit' to quit).")
+    print("Bot: Hello! I'm your assistant. Ask me anything (type 'exit' to quit).")
     messages = [{"role": "system", "content": "You are a helpful assistant."}]
 
     while True:
