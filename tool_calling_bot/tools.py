@@ -37,7 +37,7 @@ def get_current_time(timezone: str = "UTC") -> str:
         if target_zone is None:
             raise ValueError("Unknown timezone.")
         now = datetime.now(target_zone)
-        return now.strftime(f"🕒 %Y-%m-%d %H:%M:%S ({timezone})")
+        return now.strftime(f"%Y-%m-%d %H:%M:%S ({timezone})")
     except Exception as e:
         return f"Timezone error: {e}"
 
@@ -74,7 +74,7 @@ def web_search(query: str, num_results: int = 3) -> str:
                 if len(results) == num_results:
                     break
 
-        return "\n".join(results) if results else "🔍 No results found."
+        return "\n".join(results) if results else "No results found."
 
     except Exception as e:
         return f"Web search error: {e}"
